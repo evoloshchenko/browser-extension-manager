@@ -5,6 +5,7 @@ function App() {
         <h1 className="text-2xl font-light underline">
           Browser Extensions manager
         </h1>
+        <p className="text-7xl">palette picker</p>
       </div>
     </>
   );
