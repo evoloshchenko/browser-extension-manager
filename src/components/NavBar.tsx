@@ -46,7 +46,7 @@ export function NavBar() {
       </div>
       <button
         onClick={handleModeToggle}
-        className="p-2 dark:bg-neutral-700 bg-neutral-100 rounded-lg border border-neutral-300/30 cursor-pointer"
+        className="p-2 dark:bg-neutral-700 bg-neutral-100 rounded-lg border border-neutral-300/30 cursor-pointer focus:ring-2 focus:ring-red-500"
       >
         <img className="w-4 h-4" src={theme === "light" ? moon : sun} />
       </button>
