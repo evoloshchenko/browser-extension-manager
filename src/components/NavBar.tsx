@@ -1,6 +1,6 @@
 import { useTheme } from "../hooks/useTheme";
-import sun from "../assets/images/icon-sun.svg";
-import moon from "../assets/images/icon-moon.svg";
+import sun from "/images/icon-sun.svg";
+import moon from "/images/icon-moon.svg";
 
 export function NavBar() {
   const { theme, setTheme } = useTheme();
@@ -18,7 +18,7 @@ export function NavBar() {
     <div className="flex flex-row justify-between py-2 px-3 bg-neutral-50 border border-neutral-200 dark:bg-neutral-800/80 dark:border-transparent rounded-2xl">
       <div className="flex flex-row items-center">
         <svg
-          className="h-8 w-[140px]"
+          className="h-8 w-[120px]"
           xmlns="http://www.w3.org/2000/svg"
           width="179"
           height="41"
@@ -46,9 +46,9 @@ export function NavBar() {
       </div>
       <button
         onClick={handleModeToggle}
-        className="p-2 dark:bg-neutral-700 bg-neutral-100 rounded-xl border border-neutral-300/30 cursor-pointer"
+        className="p-2 dark:bg-neutral-700 bg-neutral-100 rounded-lg border border-neutral-300/30 cursor-pointer"
       >
-        <img src={theme === "light" ? moon : sun} />
+        <img className="w-4 h-4" src={theme === "light" ? moon : sun} />
       </button>
     </div>
   );
