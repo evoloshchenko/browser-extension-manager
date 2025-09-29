@@ -66,8 +66,8 @@ function App() {
                   onClick={() => setFilter(b.title)}
                   className={
                     b.title === filter
-                      ? "px-3.5 py-1 lg:py-1.5 dark:bg-red-500 text-md dark:text-neutral-900 border border-red-700 bg-red-700 hover:bg-red-500 text-neutral-50 rounded-2xl lg:rounded-3xl cursor-pointer focus:ring-2 focus:ring-red-500"
-                      : "px-3.5 py-1 lg:py-1.5 dark:bg-neutral-700 dark:border-transparent bg-neutral-50 border border-neutral-200 text-neutral-600 text-md dark:text-neutral-50 rounded-2xl lg:rounded-3xl cursor-pointer  focus:ring-2 focus:ring-red-500"
+                      ? "px-4 py-1 lg:py-1.5 dark:bg-red-500 text-md dark:text-neutral-900 border border-red-700 bg-red-700 hover:bg-red-500 text-neutral-50 rounded-2xl lg:rounded-3xl cursor-pointer focus:ring-offset-neutral-50 focus:ring-2 focus:ring-offset-1 focus:dark:ring-offset-neutral-800 focus:ring-red-500"
+                      : "px-4 py-1 lg:py-1.5 dark:bg-neutral-700 dark:border-transparent bg-neutral-50 border border-neutral-200 text-neutral-600 text-md dark:text-neutral-50 rounded-2xl lg:rounded-3xl cursor-pointer  focus:ring-2 focus:ring-red-500"
                   }
                 >
                   {b.title}

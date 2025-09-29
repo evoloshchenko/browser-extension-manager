@@ -33,7 +33,7 @@ export function ExtensionCard({ data, onToggle, onRemove }: Props) {
         <div className="flex justify-between items-center mt-auto">
           <button
             onClick={() => onRemove(data.id)}
-            className="px-3.5 py-1.5 border border-gray-300 dark:border-gray-600 rounded-3xl hover:bg-red-700 transition-all duration-300 ease-in-out hover:text-neutral-100 text-sm dark:hover:bg-red-500 dark:text-neutral-200 text-neutral-800 cursor-pointer focus:ring-2 focus:ring-red-500"
+            className="px-3.5 py-1.5 border border-gray-300 dark:border-gray-600 rounded-3xl hover:bg-red-700 transition-all duration-300 ease-in-out hover:text-neutral-100 text-sm dark:hover:bg-red-500 dark:text-neutral-200 text-neutral-800 cursor-pointer focus:outline-none focus:ring-2 focus:ring-red-500 focus:bg-neutral-100 dark:focus:bg-neutral-600 focus:ring-offset-1 focus:ring-offset-neutral-50 dark:focus:ring-offset-neutral-800"
           >
             Remove
           </button>
@@ -46,9 +46,9 @@ export function ExtensionCard({ data, onToggle, onRemove }: Props) {
               checked={data.isActive}
               type="checkbox"
               id={data.id}
-              className="peer sr-only hover:cursor-pointer focus:ring-2 focus:ring-red-500"
+              className="peer sr-only"
             />
-            <span className="absolute inset-0 bg-neutral-300 rounded-full transition-colors duration-200 ease-in-out peer-checked:bg-red-700 hover:peer-checked:bg-red-500 dark:bg-neutral-600 dark:peer-checked:bg-red-400 dark:hover:peer-checked:bg-red-500 peer-disabled:opacity-50 peer-disabled:pointer-events-none"></span>
+            <span className="absolute inset-0 bg-neutral-300 rounded-full transition-colors duration-200 ease-in-out peer-checked:bg-red-700 hover:peer-checked:bg-red-500 dark:bg-neutral-600 dark:peer-checked:bg-red-400 dark:hover:peer-checked:bg-red-500 peer-disabled:opacity-50 peer-disabled:pointer-events-none peer-focus:ring-2 peer-focus:ring-red-500 peer-focus:ring-offset-1 dark:peer-focus:ring-offset-neutral-800 peer-focus:ring-offset-neutral-50"></span>
             <span className="absolute top-1/2 start-0.5 -translate-y-1/2 size-4 bg-white rounded-full shadow-xs transition-transform duration-200 ease-in-out peer-checked:translate-x-full dark:bg-neutral-400 dark:peer-checked:bg-white"></span>
           </label>
         </div>
