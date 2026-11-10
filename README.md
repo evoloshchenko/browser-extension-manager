@@ -2,6 +2,9 @@
 
 A responsive web application built with React, TypeScript, and Tailwind CSS for managing browser extensions. The dashboard allows users to view, toggle, filter, and remove extensions with full support for light and dark themes.
 
+![Browser Extension Manager Preview Dark](./assets/preview-dark.png)
+![Browser Extension Manager Preview Light](./assets/preview-light.png)
+
 ---
 
 ## Features
@@ -64,6 +67,7 @@ src/
 ### Installation
 
 1. Clone the repository:
+
    ```bash
    git clone <repository-url>
    cd browser-extension-manager
