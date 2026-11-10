@@ -59,53 +59,13 @@ src/
 
 ## Getting Started
 
-### Prerequisites
-
-- Node.js (v18 or higher recommended)
-- pnpm (or npm / yarn)
-
-### Installation
-
-1. Clone the repository:
-
-   ```bash
-   git clone <repository-url>
-   cd browser-extension-manager
-   ```
-
-2. Install dependencies:
-   ```bash
-   pnpm install
-   ```
-
-### Development
-
-Start the development server:
-
 ```bash
-pnpm run dev
-```
+# Install dependencies
+pnpm install
 
-Open your browser and navigate to `http://localhost:5173`.
+# Start development server
+pnpm dev
 
-### Build
-
-Create a production build:
-
-```bash
-pnpm run build
-```
-
-Preview the production build locally:
-
-```bash
-pnpm run preview
-```
-
-### Linting
-
-Run ESLint to check for code issues:
-
-```bash
-pnpm run lint
+# Build for production
+pnpm build
 ```
